@@ -4,8 +4,13 @@
 </head>
 <body>
   <h1>
-    Things
+    ThingsForm
   </h1>
+  <form> 
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Register">
+  </form> 
   <p>Some stuff about things goes here.</p>
 </body>
 </html>
